@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+#include <math.h>
+main(){
+	int n;
+	printf("Moi ban chon chuc nang ");
+	scanf("%d",&n);
+	switch(n){
+		case 1: printf("Mo file");
+				break;
+		case 2:printf("Dong file");
+				break;
+		default: printf("Moi ban chon lai ");
+	}
+}
