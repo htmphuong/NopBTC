@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<string.h>
+//upper case
+void uppername(char name_arr[]) {  
+	int i;  
+ 	for(i = 0; name_arr[i] != '\0'; i++)  
+ 	{  
+ 		if(name_arr[i] >= 97 && name_arr[i] <= 122)     
+ 		name_arr[i] = name_arr[i] - 32;  
+	}  
+	} 
+	int countPA(char chuoi[])
+	{
+		int count =0;
+		for(int i=0;i<strlen(chuoi);i++)
+		{
+			if(chuoi[i]=='e' ||chuoi[i]=='o')
+			count++;
+		}
+			
+	return count;
+	}			
+int main(){
+	char chuoi[100];
+	printf("Nhap chuoi =");
+	gets(chuoi);
+	printf("Dem so phu am la %d ",countPA(chuoi));
+	uppername(chuoi);
+	printf("chuoi %s ",chuoi);
+}
+
+ 
+ 
